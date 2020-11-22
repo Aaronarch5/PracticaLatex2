@@ -9,7 +9,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{amsmath}
-
+\UseRawInputEncoding
 
 \usepackage{xcolor}
 
@@ -106,7 +106,7 @@ Sean dos matrices AB las propiedades que deben cumplir son las siguientes:
    $$c_{ij}=\sum_{r=1}^{n} a_{ir}b_{rj}$$
     
     
-   $$ C=A*B=
+   $$C=A*B=
        \begin{pmatrix}
         a_{11}+b_{11} & a_{12}+b_{12} & \cdots & a_{1n}+b_{1n}\\
         \vdots & \vdots & \ddots & \vdots\\
@@ -117,17 +117,12 @@ Sean dos matrices AB las propiedades que deben cumplir son las siguientes:
         a_{11}+b_{11} & a_{12}+b_{12} & \cdots & a_{1p}+b_{1p}\\
         \vdots & \vdots & \ddots & \vdots\\
         a_{n1}+b_{n1} & a_{n2}+b_{n2} & \cdots & a_{np}+b_{np}
-       \end{pmatrix}
-       
-    $$
-    
-    $$
-    C= \begin{pmatrix}
+       \end{pmatrix}$$   
+    $$C= \begin{pmatrix}
         a_{11}b_{11} +\cdots+ a_{1n}b_{n1} & \cdots & a_{11}b_{np}+\cdots+a_{1n}b_{np}\\
         \vdots & \vdots & \ddots \\
         a_{m1}b_{11} +\cdots+ a_{mn}b_{n1} & \cdots & a_{m1}b_{1p}+\cdots+a_{mn}b_{np}\\
-       \end{pmatrix}
-    $$
+       \end{pmatrix}$$
 Dos matrices  se pueden multiplicar únicamete si el numero de columnas de la primera matriz es igual a la segunda  De otro modo, los vectores que forman el renglón i en A y la columna j de B no tendrán el
 mismo número de componentes y el producto punto en la ecuación Dicho de otro modo,
 las matrices A y B serán incompatibles bajo la multiplicación.\\
